@@ -1,5 +1,7 @@
-module.exports = function handleHelp(ctx) {
-  return ctx.reply('Доступные команды:\n/start — приветствие\n/help — эта справка');
+module.exports = function registerHelp(bot) {
+  bot.help(async (ctx) => {
+    await ctx.reply('Доступные команды:\n/start — приветствие\n/help — помощь\nПросто напишите текст — я повторю его.');
+  });
 };
 
 

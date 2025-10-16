@@ -1,13 +1,7 @@
-module.exports = function handleStart(ctx) {
-  const firstName = ctx.from?.first_name || 'друг';
-  return ctx.reply(`Привет, ${firstName}! Я эхо-бот. Напиши что-нибудь.`, {
-    reply_markup: {
-      inline_keyboard: [
-        [
-          { text: 'Помощь', callback_data: 'HELP' }
-        ]
-      ]
-    }
+module.exports = function registerStart(bot) {
+  bot.start(async (ctx) => {
+    const name = ctx.from?.first_name || 'друг';
+    await ctx.reply(`Привет, ${name}! Я эхо-бот. Напиши что-нибудь.`);
   });
 };
 

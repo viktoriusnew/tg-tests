@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktoriusnew/tg-tests.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktoriusnew/tg-tests/issues"
+  },
+  "homepage": "https://github.com/viktoriusnew/tg-tests#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
     "telegraf": "^4.16.3"
